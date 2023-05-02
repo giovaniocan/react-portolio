@@ -8,6 +8,8 @@ export function Projects() {
       <div className=" mt-10 flex items-center justify-center gap-12 flex-wrap ">
         <ProjectCard project={CoffeDelivery} />
         <ProjectCard project={IgniteShop} />
+        <ProjectCard project={CoffeDelivery} />
+        <ProjectCard project={IgniteShop} />
       </div>
     </div>
   )
