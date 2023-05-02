@@ -20,8 +20,8 @@ export function Header() {
       <h2 className=" text-3xl font-semibold ">Portifólio</h2>
       <div className=" flex gap-12 ml-auto ">
         <div className=" hidden lg:flex gap-12 visible ">
-          <a href="" className=" text-lg ">
-            Sobre mim
+          <a href="#about" className=" text-lg ">
+             Sobre mim
           </a>
           <a href="" className=" text-lg ">
             Projetos

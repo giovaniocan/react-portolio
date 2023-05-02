@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export function Presentation() {
   return (
-    <div className=" mt-40 flex flex-col-reverse items-center lg:flex-row justify-between ">
+    <div id="about" className=" mt-40 flex flex-col-reverse items-center lg:flex-row justify-between ">
       <div className=" max-w-xs">
-        <h1 className=" text-4xl leading-10 font-medium maxw ">
+        <h1  className=" text-4xl leading-10 font-medium maxw ">
           Olá, eu sou o Giovani Ocan :)
         </h1>
         <h2 className=" mt-6 text-lg font-normal dark:text-zinc-400 ">
