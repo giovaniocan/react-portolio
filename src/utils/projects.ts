@@ -11,10 +11,10 @@ const IgniteShop = {
 
 const CoffeDelivery = {
   title: 'Coffee Delivery',
-  description: 'Site paragerenciar um carrinho de compras',
+  description: 'Site para gerenciar um carrinho de compras',
   techs: ['React', 'TypeScript', 'Styled-components'],
   image: CoffeDeliveryPng,
   github: 'https://github.com/giovaniocan/Coffee-Delivery',
 }
 
-export { CoffeDelivery, IgniteShop }
+export { IgniteShop, CoffeDelivery }
