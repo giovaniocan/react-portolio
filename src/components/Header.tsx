@@ -21,9 +21,9 @@ export function Header() {
       <div className=" flex gap-12 ml-auto ">
         <div className=" hidden lg:flex gap-12 visible ">
           <a href="#about" className=" text-lg ">
-             Sobre mim
+            Sobre mim
           </a>
-          <a href="" className=" text-lg ">
+          <a href="#projects" className=" text-lg ">
             Projetos
           </a>
           <a href="" className=" text-lg ">
@@ -33,7 +33,7 @@ export function Header() {
             Minhas skills
           </a>
         </div>
-        <button 
+        <button
           onClick={() => {
             setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
           }}
@@ -44,8 +44,8 @@ export function Header() {
             <Moon size={30} color="#00DF5E" />
           )}
         </button>
-        </div>
-      
+      </div>
+
       <div />
     </div>
   )
