@@ -4,6 +4,7 @@ import { About } from '@/components/About'
 import { Projects } from '@/components/Projects'
 import Head from 'next/head'
 import { Skills } from '@/components/Skills'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -11,13 +12,14 @@ export default function Home() {
       <Head>
         <title>Portifólio</title>
       </Head>
-      <div className=" w-11/12 max-w-6xl my-0 mx-auto py-8 ">
+      <div className=" w-11/12 max-w-6xl my-0 mx-auto pt-8 ">
         <Header />
         <Presentation />
         <About />
         <Projects />
         <Skills />
       </div>
+      <Footer />
     </>
   )
 }
