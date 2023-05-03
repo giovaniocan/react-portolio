@@ -29,8 +29,8 @@ export function Header() {
           <a href="" className=" text-lg ">
             Serviços
           </a>
-          <a href="" className=" text-lg ">
-            Minhas skills
+          <a href="#skills" className=" text-lg ">
+            Skills
           </a>
         </div>
         <button
