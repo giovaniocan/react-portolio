@@ -3,6 +3,7 @@ import { Presentation } from '@/components/Presentation'
 import { About } from '@/components/About'
 import { Projects } from '@/components/Projects'
 import Head from 'next/head'
+import { Skills } from '@/components/Skills'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Presentation />
         <About />
         <Projects />
+        <Skills />
       </div>
     </>
   )
