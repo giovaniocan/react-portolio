@@ -6,10 +6,8 @@ export function Skills() {
       id="skills"
       className=" w-full flex flex-col items-center justify-center "
     >
-      <h1 className=" mt-24 text-4xl leading-10 font-medium maxw ">
-        Minhas Skills
-      </h1>
-      <h3 className=" text-zinc-400 text-xl mt-3">
+      <h1 className=" mt-36 text-4xl leading-10 font-medium ">Minhas Skills</h1>
+      <h3 className="  text-xl mt-3 text-center dark:text-zinc-400 ">
         Passe o mouse na skill para ver mais informações
       </h3>
 
