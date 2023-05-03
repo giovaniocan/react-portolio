@@ -16,9 +16,9 @@ export function Header() {
   }
 
   return (
-    <div className=" w-full top-0 pt-8 pb-4 flex justify-between items-center fixed backdrop-blur ">
+    <div className=" w-full top-0 pt-0 pb-6 flex justify-between items-center lg:pt-8 lg:fixed backdrop-blur ">
       <h2 className=" text-3xl font-semibold ">Portifólio</h2>
-      <div className=" flex gap-12 ">
+      <div className=" flex gap-12 ml-auto lg:ml-0">
         <div className=" hidden lg:flex gap-12 visible ">
           <a href="#about" className=" text-lg ">
             Sobre mim
