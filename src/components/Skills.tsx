@@ -10,10 +10,10 @@ export function Skills() {
         Minhas Skills
       </h1>
       <h3 className=" text-zinc-400 text-xl mt-3">
-        Passe o mouse ou clique na skill para ver mais informações
+        Passe o mouse na skill para ver mais informações
       </h3>
 
-      <div className=" mt-10 flex justify-center gap-12 flex-wrap lg:max-w-4xl  ">
+      <div className=" mt-10 flex justify-center gap-12 flex-wrap lg:max-w-5xl  ">
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           level={5}
@@ -21,12 +21,12 @@ export function Skills() {
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-          level={5}
+          level={4}
           title="CSS 3"
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-          level={5}
+          level={4}
           title="Tailwind"
         />
         <Skill
@@ -36,7 +36,7 @@ export function Skills() {
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-          level={5}
+          level={4}
           title="React"
         />
         <Skill
@@ -46,7 +46,7 @@ export function Skills() {
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
-          level={5}
+          level={4}
           title="Next.js"
         />
         <Skill
@@ -61,7 +61,7 @@ export function Skills() {
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-          level={5}
+          level={4}
           title="Java"
         />
       </div>
