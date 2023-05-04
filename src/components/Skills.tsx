@@ -29,7 +29,7 @@ export function Skills() {
         />
         <Skill
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          level={5}
+          level={4}
           title="JavaScript"
         />
         <Skill
