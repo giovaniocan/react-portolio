@@ -1,5 +1,5 @@
 import { Header } from '@/components/Header'
-import { Presentation } from '@/components/Presentation'
+import { Presentation } from '@/components/Presentation/Presentation'
 import { About } from '@/components/About'
 import { Projects } from '@/components/Projects'
 import Head from 'next/head'

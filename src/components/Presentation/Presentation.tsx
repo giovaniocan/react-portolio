@@ -1,6 +1,18 @@
 import Image from 'next/image'
+import { useState } from 'react'
+
+import { ContactModal } from './ContactModal'
 
 export function Presentation() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
+  function handleOpenContactModal() {
+    setIsContactModalOpen(true)
+  }
+
+  function handleCloseContactModal() {
+    setIsContactModalOpen(false)
+  }
   return (
     <div
       id="about"
@@ -17,12 +29,19 @@ export function Presentation() {
           <button className=" border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 bg-green-500 text-black ">
             Download CV
           </button>
-          <button className=" border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 ">
+          <button
+            onClick={handleOpenContactModal}
+            className=" border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 "
+          >
             Entrar em contato
           </button>
         </div>
       </div>
       <Image src="/boy.svg" alt="" width={300} height={255} />
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onRequestClose={handleCloseContactModal}
+      />
     </div>
   )
 }
