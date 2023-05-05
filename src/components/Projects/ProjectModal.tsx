@@ -1,5 +1,6 @@
 import Modal from 'react-modal'
 import Image, { StaticImageData } from 'next/image'
+import { X } from 'phosphor-react'
 
 export type ProjectType = {
   title: string
@@ -26,10 +27,13 @@ export function ProjectModal({
       onRequestClose={onRequestClose}
       contentLabel="Modal de exemplo"
       overlayClassName="fixed inset-0 flex items-center justify-center bg-black/80 "
-      className=" p-6 bg-white border-2  border-green-500 rounded-lg  mx-6 w-full lg:w-5/12 lg:p-10 dark:bg-zinc-900 dark:border"
+      className=" p-8 bg-white border-2  border-green-500 rounded-lg  mx-4 w-full lg:w-5/12 lg:p-10 dark:bg-zinc-900 dark:border"
     >
+      <button className=" lg:ml-96 pl-72 " onClick={onRequestClose}>
+        <X size={30} className=" -mr-6 -mt-10 text-zinc-500 " />
+      </button>
       <div className=" flex flex-col gap-4 ">
-        <header className=" flex flex-col items-center justify-center gap-6 ">
+        <header className=" flex flex-col items-center  gap-6 ">
           <h1 className=" text-4xl font-medium ">{project.title}</h1>
           <Image src={project.image} width={500} height={250} alt="" />
         </header>
@@ -38,7 +42,18 @@ export function ProjectModal({
         </span>
         <div>
           <h2 className=" text-3xl font-medium  ">Tecnologias</h2>
-          <span className=" mt-6 text-xl text-zinc-400 ">{project.techs}</span>
+          <span className=" mt-6 text-xl text-zinc-400 ">
+            {project.techs.join(', ')}
+          </span>
+        </div>
+        <div>
+          <h2 className=" text-3xl font-medium  ">Links</h2>
+          <a
+            href={project.github}
+            className=" mt-6 text-xl text-zinc-400 cursor-pointer underline underline-offset-2 "
+          >
+            Github
+          </a>
         </div>
       </div>
     </Modal>
