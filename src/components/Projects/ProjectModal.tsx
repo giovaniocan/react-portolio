@@ -30,19 +30,19 @@ export function ProjectModal({
       className=" p-8 bg-white border-2  border-green-500 rounded-lg  mx-4 w-full lg:w-5/12 lg:p-10 dark:bg-zinc-900 dark:border"
     >
       <button className=" lg:ml-96 pl-72 " onClick={onRequestClose}>
-        <X size={30} className=" -mr-6 -mt-10 text-zinc-500 " />
+        <X size={30} className=" -mr-6 -mt-10  dark:text-zinc-500 " />
       </button>
       <div className=" flex flex-col gap-4 ">
         <header className=" flex flex-col items-center  gap-6 ">
           <h1 className=" text-4xl font-medium ">{project.title}</h1>
           <Image src={project.image} width={500} height={250} alt="" />
         </header>
-        <span className=" mt-2 text-xl text-zinc-400 ">
+        <span className=" mt-2 text-xl  dark:text-zinc-400 ">
           {project.description}
         </span>
         <div>
           <h2 className=" text-3xl font-medium  ">Tecnologias</h2>
-          <span className=" mt-6 text-xl text-zinc-400 ">
+          <span className=" mt-6 text-xl  dark:text-zinc-400 ">
             {project.techs.join(', ')}
           </span>
         </div>
@@ -50,7 +50,7 @@ export function ProjectModal({
           <h2 className=" text-3xl font-medium  ">Links</h2>
           <a
             href={project.github}
-            className=" mt-6 text-xl text-zinc-400 cursor-pointer underline underline-offset-2 "
+            className=" mt-6 text-xl dark:text-zinc-400 cursor-pointer underline underline-offset-2 "
           >
             Github
           </a>
