@@ -1,7 +1,7 @@
 import { Header } from '@/components/Header'
 import { Presentation } from '@/components/Presentation/Presentation'
 import { About } from '@/components/About'
-import { Projects } from '@/components/Projects'
+import { Projects } from '@/components/Projects/Projects'
 import Head from 'next/head'
 import { Skills } from '@/components/Skills'
 import { Footer } from '@/components/Footer'

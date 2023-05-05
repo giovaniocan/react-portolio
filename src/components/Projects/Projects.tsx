@@ -1,5 +1,5 @@
 import { ProjectCard } from './ProjectsCard'
-import { CoffeDelivery, IgniteShop } from '../utils/projects'
+import { CoffeDelivery, IgniteShop } from '../../utils/projects'
 
 export function Projects() {
   return (
