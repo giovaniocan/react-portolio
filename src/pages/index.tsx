@@ -5,6 +5,7 @@ import { Projects } from '@/components/Projects/Projects'
 import Head from 'next/head'
 import { Skills } from '@/components/Skills'
 import { Footer } from '@/components/Footer'
+import { ReturTOHeader } from '@/components/ReturnToHeader'
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
         <About />
         <Projects />
         <Skills />
+        <ReturTOHeader />
       </div>
+
       <Footer />
     </>
   )
