@@ -1,11 +1,19 @@
 'use client'
 import { useTheme } from 'next-themes'
-import { Moon, Sun } from 'phosphor-react'
+import { List, Moon, Sun, X } from 'phosphor-react'
 import { useEffect, useState } from 'react'
+import { MenuNav } from './MenuNav'
 
 export function Header() {
   const { resolvedTheme, setTheme } = useTheme()
   const [isMounted, setIsMounted] = useState(false)
+
+  const [nav, setNav] = useState(false)
+
+  function handletoggleNav() {
+    setNav(!nav)
+    console.log(nav)
+  }
 
   useEffect(() => {
     setIsMounted(true)
@@ -18,10 +26,10 @@ export function Header() {
   return (
     <div
       id="header"
-      className=" w-full top-0 pt-0 pb-6 flex justify-between items-center lg:pt-8 lg:fixed backdrop-blur "
+      className=" w-full p-8 top-0    md:pb-6 flex justify-between items-center md:pt-8 lg:fixed backdrop-blur "
     >
       <h2 className=" text-3xl font-semibold ">Portifólio</h2>
-      <div className=" flex gap-12 ml-auto lg:ml-0">
+      <div className=" flex gap-4 md:gap-12 ml-auto lg:ml-0">
         <div className=" hidden lg:flex gap-12 visible ">
           <a href="#about" className=" text-lg relative group ">
             Sobre mim
@@ -56,6 +64,18 @@ export function Header() {
             <Moon size={30} color="#00DF5E" />
           )}
         </button>
+        <div className="transition-all  md:hidden ">
+          {nav ? (
+            <X
+              size={45}
+              onClick={handletoggleNav}
+              className="fixed right-6 top-5 text-3xl text-dark md:hidden z-50"
+            />
+          ) : (
+            <List size={45} onClick={handletoggleNav} />
+          )}
+        </div>
+        {nav ? <MenuNav nav={nav} /> : ''}
       </div>
 
       <div />

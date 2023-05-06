@@ -13,14 +13,15 @@ export default function Home() {
       <Head>
         <title>Portifólio</title>
       </Head>
-      <div className=" w-11/12 max-w-6xl my-0 mx-auto pt-8 ">
+
+      <main className=" md:w-11/12 max-w-6xl my-0 md:mx-auto md:pt-8 ">
         <Header />
         <Presentation />
         <About />
         <Projects />
         <Skills />
         <ReturTOHeader />
-      </div>
+      </main>
 
       <Footer />
     </>
