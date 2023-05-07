@@ -1,27 +1,22 @@
 interface MenuNavProps {
   nav: boolean
+  closeNav: () => void
 }
 
-export function MenuNav({ nav }: MenuNavProps) {
+export function MenuNav({ nav, closeNav }: MenuNavProps) {
   return (
     <nav
-      className={`h-[100vh] fixed top-[0px] right-0 flex flex-col justify-center gap-16 items-center w-full md:hidden py-10 bg-green-500 text-gray-600 z-40 duration-500 text-xl 
+      className={`h-screen overflow-y-hidden overflow-x-hidden   w-screen fixed top-0 right-0 flex flex-col justify-center gap-16 items-center  md:hidden  bg-green-500 text-gray-600 z-40  text-xl duration-1000
     ${nav ? 'right-[0px]' : 'right-[-100vw]'}`}
     >
-      <a href="#about" className="border-b-2 border-black pb-1">
-        Sobre nós
+      <a href="#about" onClick={closeNav} className="text-white text-3xl">
+        Sobre mim
       </a>
-      <a href="#courses" className="border-b-2 border-black pb-1">
-        Cursos
+      <a href="#projects" onClick={closeNav} className="text-white text-3xl">
+        Projetos
       </a>
-      <a href="#depositions" className="border-b-2 border-black pb-1">
-        Depoimentos
-      </a>
-      <a href="#contact" className="border-b-2 border-black pb-1">
-        Contato
-      </a>
-      <a href="#faq" className="border-b-2 border-black pb-1">
-        FAQ
+      <a href="#skills" onClick={closeNav} className="text-white text-3xl">
+        Skills
       </a>
     </nav>
   )
