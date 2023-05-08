@@ -46,9 +46,12 @@ export function Presentation() {
           Desenvolvedor Frontend Junior
         </h2>
         <div className=" w-full mt-8 flex items-center justify-stretch gap-3 ">
-          <button className=" border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3  ">
+          <a
+            href="/GiovaniOcanCV.pdf"
+            className=" border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 flex items-center justify-center "
+          >
             Download CV
-          </button>
+          </a>
           <button
             onClick={handleOpenContactModal}
             className="  md:animate-pulse border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 bg-green-500 text-black "

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portifólio</title>
+        <title>Portfólio</title>
       </Head>
 
       <main className=" md:w-11/12 max-w-6xl my-0 md:mx-auto md:pt-8 ">
