@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    level: 4,
+    level: 5,
     title: 'React',
   },
   {

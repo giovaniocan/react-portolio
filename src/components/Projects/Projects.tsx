@@ -1,5 +1,5 @@
 import { ProjectCard } from './ProjectsCard'
-import { CoffeDelivery, IgniteShop } from '../../utils/projects'
+import { projects } from '../../utils/projects'
 
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
@@ -30,12 +30,9 @@ export function Projects() {
     >
       <h1 className=" mt-24 text-4xl leading-10 font-medium maxw ">Projetos</h1>
       <div className=" mt-10 flex items-center justify-center gap-12 flex-wrap  ">
-        <ProjectCard project={CoffeDelivery} />
-        <ProjectCard project={IgniteShop} />
-        <ProjectCard project={CoffeDelivery} />
-        <ProjectCard project={IgniteShop} />
-        <ProjectCard project={IgniteShop} />
-        <ProjectCard project={IgniteShop} />
+        {projects.map((project) => {
+          return <ProjectCard key={project.github} project={project} />
+        })}
       </div>
     </motion.div>
   )
