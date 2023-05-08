@@ -1,10 +1,26 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useAnimation, motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 import { ContactModal } from './ContactModal'
 
 export function Presentation() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -200 },
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
 
   function handleOpenContactModal() {
     setIsContactModalOpen(true)
@@ -14,7 +30,11 @@ export function Presentation() {
     setIsContactModalOpen(false)
   }
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
       id="about"
       className=" mt-40 flex flex-col-reverse items-center lg:flex-row justify-between "
     >
@@ -31,7 +51,7 @@ export function Presentation() {
           </button>
           <button
             onClick={handleOpenContactModal}
-            className=" animate-pulse border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 bg-green-500 text-black "
+            className="  md:animate-pulse border border-zinc-400 dark:border-zinc-800 w-full text-sm p-3 bg-green-500 text-black "
           >
             Entrar em contato
           </button>
@@ -42,6 +62,6 @@ export function Presentation() {
         isOpen={isContactModalOpen}
         onRequestClose={handleCloseContactModal}
       />
-    </div>
+    </motion.div>
   )
 }

@@ -27,7 +27,9 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
         <div className=" bg-zinc-200 p-5 rounded dark:bg-zinc-800 text-zinc-400">
           <div className="flex items-center gap-4">
             <Phone size={30} color="#00DF5E" />
-            <span className=" text-xl font-light ">(44) 99842-8989</span>
+            <span className=" text-xl font-light text-zinc-700 dark:text-zinc-400 ">
+              (44) 99842-8989
+            </span>
           </div>
         </div>
         <div className=" bg-zinc-200 p-5 rounded dark:bg-zinc-800 text-zinc-400">
@@ -40,16 +42,18 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
             />
             <a
               href="https://github.com/giovaniocan"
-              className="text-xl font-light cursor-pointer underline underline-offset-2"
+              className="text-xl font-light cursor-pointer underline underline-offset-2 text-zinc-700 dark:text-zinc-400"
             >
               giovaniocan
             </a>
           </div>
         </div>
-        <div className=" bg-zinc-200 p-5 rounded dark:bg-zinc-800 text-zinc-400">
+        <div className=" bg-zinc-200 p-5 rounded dark:bg-zinc-800 text-zinc-400 ">
           <div className="flex items-center gap-4">
             <EnvelopeSimple size={30} color="#00DF5E" />
-            <span className=" text-xl font-light">giovaniocan@gmail.com</span>
+            <span className=" text-xl text-zinc-700 dark:text-zinc-400 font-light">
+              giovaniocan@gmail.com
+            </span>
           </div>
         </div>
         <div className=" bg-zinc-200 p-5 rounded dark:bg-zinc-800 text-zinc-400">
@@ -57,7 +61,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
             <LinkedinLogo size={30} color="#00DF5E" />
             <a
               href="https://www.linkedin.com/in/giovani-ocan/"
-              className="text-xl font-light cursor-pointer underline underline-offset-2"
+              className="text-xl font-light cursor-pointer underline  underline-offset-2 text-zinc-700 dark:text-zinc-400"
             >
               Giovani Apolinario Ocan
             </a>

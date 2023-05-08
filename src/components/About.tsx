@@ -1,6 +1,29 @@
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
+import { useAnimation, motion } from 'framer-motion'
+
 export function About() {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -200 },
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
   return (
-    <div className=" w-full flex flex-col items-center justify-center ">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
+      className=" w-full flex flex-col items-center justify-center "
+    >
       <h1 className=" mt-36 text-4xl leading-10 font-medium maxw ">
         Sobre mim
       </h1>
@@ -12,6 +35,6 @@ export function About() {
         técnico em informática pretendo aprimorar minhas skills e conhecimentos
         para poder entrar no mercado de trabalho como dev.
       </p>
-    </div>
+    </motion.div>
   )
 }
