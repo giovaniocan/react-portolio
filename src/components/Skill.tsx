@@ -4,11 +4,11 @@ import { Star } from 'phosphor-react'
 interface Props {
   src: string
   title: string
-  level: 1 | 2 | 3 | 4 | 5
+  level: number
 }
 
 export function Skill({ src, title, level }: Props) {
-  const starsCollored = level as number
+  const starsCollored = level
   const starsEmpty = 5 - starsCollored
 
   return (
