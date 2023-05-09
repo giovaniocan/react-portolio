@@ -7,7 +7,8 @@ export type ProjectType = {
   description: string
   techs: string[]
   image: StaticImageData
-  github: string
+  github?: string
+  deploy?: string
 }
 
 interface ContactModalProps {
@@ -48,12 +49,28 @@ export function ProjectModal({
         </div>
         <div>
           <h2 className=" text-3xl font-medium  ">Links</h2>
-          <a
-            href={project.github}
-            className=" mt-6 text-xl dark:text-zinc-400 cursor-pointer underline underline-offset-2 "
-          >
-            Github
-          </a>
+          <div>
+            {project.github ? (
+              <a
+                href={project.github}
+                className=" mt-6 text-xl dark:text-zinc-400 cursor-pointer underline underline-offset-2 mr-4"
+              >
+                Github
+              </a>
+            ) : (
+              ''
+            )}
+            {project.deploy ? (
+              <a
+                href={project.deploy}
+                className=" mt-6 text-xl dark:text-zinc-400 cursor-pointer underline underline-offset-2 "
+              >
+                Deploy
+              </a>
+            ) : (
+              ''
+            )}
+          </div>
         </div>
       </div>
     </Modal>

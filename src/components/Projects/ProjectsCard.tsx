@@ -9,7 +9,8 @@ export type ProjectType = {
   description: string
   techs: string[]
   image: StaticImageData
-  github: string
+  github?: string
+  deploy?: string
 }
 
 interface Props {
