@@ -35,7 +35,7 @@ export function ProjectCard({ project }: Props) {
       >
         <Image className="object-cover" alt="" src={project.image} />
         <h3 className=" mt-4 text-lg dark:text-zinc-400">{project.title}</h3>
-        <p className=" mt-1 text-sm dark:text-zinc-400">
+        <p className=" mt-1 text-sm dark:text-zinc-400 line-clamp-2">
           {project.description}
         </p>
       </button>

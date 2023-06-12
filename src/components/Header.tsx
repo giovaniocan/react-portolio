@@ -26,10 +26,10 @@ export function Header() {
   return (
     <div
       id="header"
-      className="  w-full p-8 top-0 md:pb-6 flex justify-between items-center md:pt-8 lg:fixed backdrop-blur "
+      className="  w-full p-8 top-0 md:pb-6 flex justify-between items-center  "
     >
       <h2 className=" text-3xl font-semibold ">Portifólio</h2>
-      <div className=" flex gap-4 md:gap-12 ml-auto lg:ml-0">
+      <div className=" flex gap-4 md:gap-12 ml-auto lg:">
         <div className=" hidden md:flex gap-12 visible ">
           <a href="#about" className="  text-lg relative group ">
             Sobre mim

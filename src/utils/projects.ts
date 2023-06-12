@@ -3,8 +3,18 @@ import CoffeDeliveryPng from '../../public/coffeeDelivery.png'
 import lunaBusPng from '../../public/lunabus.png'
 import designSystemPng from '../../public/designsystem.png'
 import DevFinderPng from '../../public/devFinderPng.png'
+import igniteCallPng from '../../public/IgniteCall.png'
 
 export const projects = [
+  {
+    title: 'Ignite Call',
+    description:
+      'O projeto Ignite Call foi construído para agendamentos de compromissos a partir de um calendário com integração com o Google Agenda',
+    techs: ['React', 'Next.js', 'Node', 'Google APIs', 'Axios', 'TypeScript'],
+    image: igniteCallPng,
+    github: 'https://github.com/giovaniocan/ignite-call',
+    deploy: 'https://ignite-call-smoky.vercel.app/',
+  },
   {
     title: 'Ignite Shop',
     description: 'Site para venda de itens do Ignite.',
