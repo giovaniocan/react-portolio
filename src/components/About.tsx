@@ -27,13 +27,13 @@ export function About() {
       <h1 className=" mt-36 text-4xl leading-10 font-medium maxw ">
         Sobre mim
       </h1>
-      <p className=" mt-10 px-6  text-center text-base lg:px-36 text-lg leading-8   dark:text-zinc-400  ">
-        Meu nome é Giovani Apolinario Ocan, tenho 18 anos e estudo programação
-        há mais de 4 anos. Atualmente estou focado em aprender cada vez mais
-        sobre o Front End e suas tecnologias, como o React e Nextjs utilizando
-        Typescript. Agora que terminei o ensino médio integrado ao curso de
-        técnico em informática pretendo aprimorar minhas skills e conhecimentos
-        para poder entrar no mercado de trabalho como dev.
+      <p className=" mt-10 px-6  text-center text-base lg:px-36 md:text-lg leading-8   dark:text-zinc-400  ">
+        Sou um desenvolvedor júnior apaixonado por tecnologia, com mais de 4
+        anos de experiência em programação. Acredito que a programação tem o
+        poder de transformar a vida das pessoas e solucionar problemas reais.
+        Busco aprendizado constante e estou entusiasmado em contribuir em
+        projetos desafiadores, aprimorando minhas habilidades e impulsionando o
+        progresso da equipe
       </p>
     </motion.div>
   )

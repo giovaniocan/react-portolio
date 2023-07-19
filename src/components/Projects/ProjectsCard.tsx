@@ -40,6 +40,7 @@ export function ProjectCard({ project }: Props) {
         </p>
       </button>
       <ProjectModal
+        key={project.description}
         isOpen={isContactModalOpen}
         project={project}
         onRequestClose={handleCloseContactModal}

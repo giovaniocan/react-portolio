@@ -43,7 +43,7 @@ export function Presentation() {
           Olá, eu sou o Giovani Ocan :)
         </h1>
         <h2 className=" mt-6 text-lg font-normal dark:text-zinc-400 ">
-          Desenvolvedor Frontend Junior
+          Desenvolvedor Frontend
         </h2>
         <div className=" w-full mt-8 flex items-center justify-stretch gap-3 ">
           <a
